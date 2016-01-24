@@ -24,6 +24,6 @@ This project utilises the following front-end technologies
 * `gulp prod` to build all assets files into one public viewing dist folder.
 
 ##Coding Rquirement Completed as follows:
-Coding standard, comments and style
-Unit Test strategy
-Overal Solution design
+* Coding standard, comments and style
+* Unit Test strategy
+* Overal Solution design
