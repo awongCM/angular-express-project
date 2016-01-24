@@ -1,0 +1,26 @@
+{
+  "name": "angular-express-project",
+  "version": "0.0.1",
+  "authors": [
+    "Andy Wong"
+  ],
+  "description": "Candidate Code Project using Angular and Express/Node",
+  "keywords": [
+    "express",
+    "sass",
+    "browserify",
+    "bootstrap-sass"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}

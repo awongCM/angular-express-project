@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angular Express App</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+    <div class="container" ng-controller="MainCtrl" ng-init="loadAllPhotos()">
+      <div class="well well-sm">
+          <form>
+              <div class="input-group input-group-lg">
+              <input type="text" class="form-control" name="tags" placeholder="Enter tag keywords " ng-model="searchFormData.tags" aria-describedby="sizing-addon1">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="searchPhotos()">Search</button>
+              </span>
+            </div>
+          </form>
+      </div>
+
+      <div class="row list-group" id="photo-gallery">
+          <div class="item col-xs-4 col-lg-4" ng-repeat="photo in photoGalleryData">
+              <div class="thumbnail">
+                  <a href="{{photo.link}}" target="new">
+                    <img class="list-group-image" src="{{photo.media.m}}" alt="" style="height: 200px;"/>
+                  </a>
+                  <div class="caption">
+                      <h4 class="list-group-item-heading lead">
+                          Title
+                      </h4>
+                      <p class="list-group-item-text">
+                          {{photo.title}}
+                      </p>
+                      <div class="row">
+                          <div class="col-xs-12 col-md-12">
+                              <h4 class="list-group-item-heading lead">
+                                Tags
+                              </h4>
+                          </div>
+                          <div class="col-xs-12 col-md-12">
+                            <p class="list-group-item-text">
+                              {{photo.tags}}
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="src/bundle.js"></script>
+    </body>
+</html>
