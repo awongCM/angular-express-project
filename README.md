@@ -18,9 +18,12 @@ This project utilises the following front-end technologies
 2. Navigate to the folder.
 3. Run `bower install && npm install`.
 
+##To start Node/Express
+* `node server/express.js`
+
 ##Available Gulp commands
 * `gulp clean` to manually clean up dist folders
-* `gulp dev` to startup the app. BrowserSync will load browser.  It also proxies Express server in the background.
+* `gulp dev` to startup the app. BrowserSync will load browser.  It also instantiate and proxies Express server in the background.
 * `gulp prod` to build all assets files into one public viewing dist folder.
 
 ##Coding Rquirement Completed as follows:
