@@ -16,7 +16,7 @@ var express = require('express'),
 //Express Server Path Config settings
 var serverConfig = {
     baseURL: 'dist',
-    port: 5000
+    port: 8080
 };
 
 //Express Server configuration

@@ -66,8 +66,8 @@ var bowerConfig = {
 //Express Server Path Settings
 var serverConfig = {
   baseScript: './server/express.js',
-  proxyHost: 'http://localhost:5000',
-  port: '5000'
+  proxyHost: 'http://localhost',
+  port: 8080
 };
 
 gulp.task('clean',function() {
